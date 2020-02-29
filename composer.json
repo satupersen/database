@@ -1,0 +1,47 @@
+{
+    "name": "satupersen/database",
+    "description": "The Illuminate Database package.",
+    "license": "MIT",
+    "homepage": "https://laravel.com",
+    "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+    },
+    "keywords": ["laravel", "database", "sql", "orm"],
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "satupersen/container": "^1.0",
+        "satupersen/contracts": "^1.0",
+        "satupersen/support": "^1.0",
+        "symfony/console": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Satupersen\\Database\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
+        "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
+        "satupersen/console": "Required to use the database commands (^1.0).",
+        "satupersen/events": "Required to use the observers with Eloquent (^1.0).",
+        "satupersen/filesystem": "Required to use the migrations (^1.0).",
+        "satupersen/pagination": "Required to paginate the result set (^1.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
